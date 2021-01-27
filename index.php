@@ -40,33 +40,33 @@
             <div class="in-block-head">
                 <img src="Images/date.png" alt="" width="100px" height="100px">
                 <div>
-                    <h2>อัพเดทข้อมูลประจำ : <?=$UpdateDate;?>น.</h3> 
-                    <span>จำนวนผู้ติดเชื้อเพิ่ม : <?=$NewConfirmed; ?></span><br>
-                    <span>ราย จำนวนผู้ป่วยที่รักษาหายเพิ่ม : <?= $NewRecovered; ?></span><br>
-                    <span>ราย และจำนวนผู้เสียชีวิตเพิ่ม : <?= $NewDeaths; ?> ราย</span>
+                    <h2>อัพเดทข้อมูลประจำ : <?php echo $UpdateDate; ?>น.</h3> 
+                    <span>จำนวนผู้ติดเชื้อเพิ่ม : <?php echo $NewConfirmed; ?></span><br>
+                    <span>ราย จำนวนผู้ป่วยที่รักษาหายเพิ่ม : <?php echo $NewRecovered; ?></span><br>
+                    <span>ราย และจำนวนผู้เสียชีวิตเพิ่ม : <?php echo $NewDeaths; ?> ราย</span>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="block-details">
                 <img src="Images/virus.png" alt="" width="100px" height="100px">
-                <h3>จำนวนผู้ติดเชื้อ : <?=$Confirmed; ?></h3>
-                <p>เพิ่มขึ้นวันนี้ : <?=$NewConfirmed; ?></p>
+                <h3>จำนวนผู้ติดเชื้อ : <?php echo $Confirmed; ?></h3>
+                <p>เพิ่มขึ้นวันนี้ : <?php echo $NewConfirmed; ?></p>
             </div>
             <div class="block-details">
                 <img src="Images/infection.png" alt="" width="100px" height="100px">
-                <h3>ผู้ป่วย : <?=$Hospitalized; ?></h3>
-                <p>เพิ่มขึ้นวันนี้ : <?=$NewHospitalized; ?></p>
+                <h3>ผู้ป่วย : <?php echo $Hospitalized; ?></h3>
+                <p>เพิ่มขึ้นวันนี้ : <?php echo $NewHospitalized; ?></p>
             </div>
             <div class="block-details">
                 <img src="Images/vaccine.png" alt="" width="100px" height="100px">
-                <h3>รักษาหาย : <?=$Recovered; ?></h3>
-                <p>เพิ่มขึ้นวันนี้ : <?=$NewRecovered; ?></p>
+                <h3>รักษาหาย : <?php echo $Recovered; ?></h3>
+                <p>เพิ่มขึ้นวันนี้ : <?php echo $NewRecovered; ?></p>
             </div>
             <div class="block-details">
                 <img src="Images/skull.png" alt="" width="100px" height="100px">
-                <h3>ผู้เสียชีวิต : <?=$Deaths; ?></h3>
-                <p>เพิ่มขึ้นวันนี้ : <?=$NewDeaths; ?></p>
+                <h3>ผู้เสียชีวิต : <?php echo $Deaths; ?></h3>
+                <p>เพิ่มขึ้นวันนี้ : <?php echo $NewDeaths; ?></p>
             </div>
         </div>
     </section>
