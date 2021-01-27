@@ -5,6 +5,7 @@
 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
+    //ที่มาของ API ข้อมูล
     curl_setopt($ch, CURLOPT_URL,"https://covid19.th-stat.com/api/open/today");
 
     $result=curl_exec($ch);
@@ -13,6 +14,7 @@
 
     $ApiCovid= json_decode($result, true);
 
+    //ประกาศตัวแปรแยกเป็นแต่ละคอลัมภ์
     $Confirmed = $ApiCovid['Confirmed'] ; 
     $Recovered = $ApiCovid['Recovered'] ;
     $Hospitalized = $ApiCovid['Hospitalized'] ;
@@ -26,12 +28,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid</title>
 </head>
 <body>
+    <!-- HTML + CSS -->
     <section class="container">
         <div class="block">
             <h1>Covid-19 Situation Reports</h1>
